@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <!-- 1. Page settings and links to the separate CSS and JavaScript files -->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home | Campus Event Booking System</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/app.js" defer></script>
+  </head>
+  <body>
+    <!-- Keyboard shortcut to skip navigation -->
+    <a class="skip" href="#main">Skip to content</a>
+    <!-- 2. Website title and navigation links -->
+    <header>
+      <a class="site-title" href="index.html"><span class="brand-icon" aria-hidden="true">C</span>Campus Events</a>
+      <nav aria-label="Main navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="events.html">Events</a>
+        <a href="my-bookings.html">My Bookings</a>
+        <details class="account-menu">
+          <summary>Account</summary>
+          <div class="account-links">
+            <a href="login.html">Log in</a>
+            <a href="register.html">Create account</a>
+            <a href="profile.html">My profile</a>
+            <a href="reset-password.html">Reset password</a>
+          </div>
+        </details>
+      </nav>
+    </header>
+    <!-- 3. Main content for this page -->
+    <main id="main">
+      <section class="welcome hero">
+        <div>
+          <p class="eyebrow">Discover · Connect · Belong</p>
+          <h1>Make the most<br />of campus life.</h1>
+          <p>Find your next big idea, your favourite live act, or your people. Explore campus events and save your place in just a few steps.</p>
+          <div class="actions"><a class="button" href="events.html">Explore events <span aria-hidden="true">→</span></a><a class="hero-link" href="my-bookings.html">My bookings</a></div>
+        </div>
+        <aside class="hero-feature" aria-label="Featured event">
+          <p class="eyebrow">In the spotlight</p>
+          <div class="feature-date"><strong>04</strong><span>DEC · 2026</span></div>
+          <span class="status">Academic</span>
+          <h2>Campus Innovation Summit</h2>
+          <p>Fresh ideas. Student innovators. A day of discovery.</p>
+          <p class="feature-location">Main Auditorium · 10:00 AM</p>
+          <a href="event-details.html?event=innovation">View event <span aria-hidden="true">→</span></a>
+        </aside>
+      </section>
+      <section aria-labelledby="discover-heading">
+        <div class="section-heading"><div><p class="eyebrow">Something for everyone</p><h2 id="discover-heading">Find your kind of event</h2></div><a href="events.html">View all events →</a></div>
+        <div class="category-grid">
+          <article class="panel"><span class="category-number">01 / LEARN</span><h3>Ideas that inspire</h3><p>Explore new perspectives at workshops and academic gatherings.</p><a href="event-details.html?event=innovation">Explore innovation →</a></article>
+          <article class="panel"><span class="category-number">02 / EXPERIENCE</span><h3>A little more live</h3><p>Take a break and enjoy performances from campus musicians.</p><a href="event-details.html?event=music">Discover live music →</a></article>
+          <article class="panel"><span class="category-number">03 / CONNECT</span><h3>Meet your community</h3><p>Make new connections at welcoming student socials.</p><a href="event-details.html?event=social">Join a campus social →</a></article>
+        </div>
+      </section>
+      <section class="join-banner"><div><h2>A great campus experience starts here.</h2><p>Set up your student profile and get ready for your next event.</p></div><a class="button" href="register.html">Get started</a></section>
+    </main>
+    <!-- 4. Shared footer and project information -->
+    <footer>
+      <div class="footer-inner">
+        <div><strong>Campus Events</strong><p>Your campus. Your community.</p></div>
+        <nav aria-label="Footer navigation"><a href="about.html">About</a><a href="contact.html">Contact</a><a href="admin.html">Admin</a></nav>
+      </div>
+      <p class="demo-note">Student project · Demo bookings only. No real reservations or emails.</p>
+    </footer>
+  </body>
+</html>

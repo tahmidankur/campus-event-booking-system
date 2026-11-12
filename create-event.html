@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><title>Create Event | Campus Event Booking System</title><link rel="stylesheet" href="assets/styles.css" /><script src="assets/app.js" defer></script></head><body><a class="skip" href="#main">Skip to content</a><header><a class="site-title" href="index.html"><span class="brand-icon" aria-hidden="true">C</span>Campus Events</a><nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="my-bookings.html">My Bookings</a>
+        <details class="account-menu">
+          <summary>Account</summary>
+          <div class="account-links">
+            <a href="login.html">Log in</a>
+            <a href="register.html">Create account</a>
+            <a href="profile.html">My profile</a>
+            <a href="reset-password.html">Reset password</a>
+          </div>
+        </details>
+      </nav></header><main id="main" class="centered-page"><nav class="section-nav" aria-label="Administrator navigation"><a href="admin.html">Overview</a><a href="manage-events.html">Manage events</a><a href="create-event.html" aria-current="page">Create event</a></nav><h1>Create Event</h1><p>Add an event to the local demo catalogue. This prototype does not publish to a server.</p><section class="panel form-panel"><form data-form="create-event" method="post" action="#"><label for="title">Event title</label><input id="title" name="title" type="text" maxlength="100" required /><label for="date">Event date</label><input id="date" name="date" type="date"  required /><label for="time">Start time</label><input id="time" name="time" type="time"  required /><label for="venue">Venue</label><input id="venue" name="venue" type="text" maxlength="100" required /><label for="category">Category</label><select id="category" name="category"><option>Academic</option><option>Music</option><option>Social</option><option>Sport</option></select><label for="capacity">Capacity</label><input id="capacity" name="capacity" type="number" min="1" max="10000" required /><label for="description">Description</label><textarea id="description" name="description" rows="5" maxlength="2000" required></textarea><button type="submit">Save demo event</button><p class="form-message" role="status"></p></form></section></main><footer>
+      <div class="footer-inner">
+        <div><strong>Campus Events</strong><p>Your campus. Your community.</p></div>
+        <nav aria-label="Footer navigation"><a href="about.html">About</a><a href="contact.html">Contact</a><a href="admin.html">Admin</a></nav>
+      </div>
+      <p class="demo-note">Student project · Demo bookings only. No real reservations or emails.</p>
+    </footer></body></html>

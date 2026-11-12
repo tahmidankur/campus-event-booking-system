@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <!-- 1. Page settings and links to the separate CSS and JavaScript files -->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Admin Dashboard | Campus Event Booking System</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/app.js" defer></script>
+  </head>
+  <body>
+    <!-- Keyboard shortcut to skip navigation -->
+    <a class="skip" href="#main">Skip to content</a>
+    <!-- 2. Website title and navigation links -->
+    <header>
+      <a class="site-title" href="index.html"><span class="brand-icon" aria-hidden="true">C</span>Campus Events</a>
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="my-bookings.html">My Bookings</a>
+        <details class="account-menu">
+          <summary>Account</summary>
+          <div class="account-links">
+            <a href="login.html">Log in</a>
+            <a href="register.html">Create account</a>
+            <a href="profile.html">My profile</a>
+            <a href="reset-password.html">Reset password</a>
+          </div>
+        </details>
+      </nav>
+    </header>
+    <!-- 3. Main content for this page -->
+    <main id="main"><nav class="section-nav" aria-label="Administrator navigation"><a href="admin.html" aria-current="page">Overview</a><a href="manage-events.html">Manage events</a><a href="create-event.html">Create event</a></nav>
+      <h1>Admin Dashboard</h1>
+      <p>Overview of campus events and bookings. These are sample records.</p>
+      <p class="actions"><a class="button" href="manage-events.html">Manage events</a><a href="create-event.html">Create event</a></p>
+      <!-- Admin summary cards: sample numbers for the design -->
+      <div class="stats">
+        <section class="panel"><h2>Events</h2><p>6</p></section>
+        <section class="panel"><h2>Bookings</h2><p>248</p></section>
+        <section class="panel"><h2>Students</h2><p>186</p></section>
+      </div>
+      <section class="panel">
+        <h2>Recent bookings</h2>
+        <!-- Recent bookings table: sample rows, replace with database records later -->
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Booking ID</th><th>Student</th><th>Event</th><th>Status</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>CB-1024</td><td>Alex Morgan</td><td>Campus Innovation Summit</td><td><span class="status">Confirmed</span></td></tr>
+              <tr><td>CB-1023</td><td>Jordan Lee</td><td>Live Music Session</td><td><span class="status">Confirmed</span></td></tr>
+              <tr><td>CB-1022</td><td>Sam Rivera</td><td>Campus Social</td><td><span class="status pending">Pending</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+    <!-- 4. Shared footer and project information -->
+    <footer>
+      <div class="footer-inner">
+        <div><strong>Campus Events</strong><p>Your campus. Your community.</p></div>
+        <nav aria-label="Footer navigation"><a href="about.html">About</a><a href="contact.html">Contact</a><a href="admin.html" aria-current="page">Admin</a></nav>
+      </div>
+      <p class="demo-note">Student project · Demo bookings only. No real reservations or emails.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><title>Book Event | Campus Event Booking System</title><link rel="stylesheet" href="assets/styles.css" /><script src="assets/app.js" defer></script></head><body><a class="skip" href="#main">Skip to content</a><header><a class="site-title" href="index.html"><span class="brand-icon" aria-hidden="true">C</span>Campus Events</a><nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="my-bookings.html">My Bookings</a>
+        <details class="account-menu">
+          <summary>Account</summary>
+          <div class="account-links">
+            <a href="login.html">Log in</a>
+            <a href="register.html">Create account</a>
+            <a href="profile.html">My profile</a>
+            <a href="reset-password.html">Reset password</a>
+          </div>
+        </details>
+      </nav></header><main id="main" class="centered-page"><h1>Book Event</h1><p>Reserve a place in this browser demo. No payment is required.</p><section class="panel form-panel"><form data-form="booking" method="post" action="#"><label for="event_id">Event</label><select id="event_id" name="event_id" required></select><label for="attendee">Full name</label><input id="attendee" name="attendee" type="text" autocomplete="name" maxlength="100" required /><label for="email">University email</label><input id="email" name="email" type="email" autocomplete="email" required /><label for="tickets">Number of places</label><input id="tickets" name="tickets" type="number" min="1" max="4" value="1" required /><p>You may reserve up to four places per booking.</p><button type="submit">Confirm demo booking</button><p class="form-message" role="status"></p></form></section></main><footer>
+      <div class="footer-inner">
+        <div><strong>Campus Events</strong><p>Your campus. Your community.</p></div>
+        <nav aria-label="Footer navigation"><a href="about.html">About</a><a href="contact.html">Contact</a><a href="admin.html">Admin</a></nav>
+      </div>
+      <p class="demo-note">Student project · Demo bookings only. No real reservations or emails.</p>
+    </footer></body></html>
